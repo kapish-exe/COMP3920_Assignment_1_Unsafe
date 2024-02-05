@@ -1,0 +1,15 @@
+<%- include("templates/header") %>
+
+<h1>Hello, <%= username %></h1>
+<%  if (id == 1) { %> 
+    <img src="/img1.avif"  style='width:250px;'>
+<% } else if (id == 2) { %>
+    <img src='/img2.jpg' style='width:250px;'>
+<% } else if (id == 3) { %>
+    <img src='/img3.webp' style='width:250px;'>
+<% }else { %>
+    Invalid id: <%= id %> 
+<% } %>  
+
+<%- include("templates/footer") %>
+
